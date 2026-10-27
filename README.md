@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Legacy Client API Compatibility Guardian
 
 A beginner-friendly MVP that replays saved API requests from older app versions, checks whether the new backend still returns the fields those apps expect, creates a JSON report, and displays the result in a web dashboard. GitHub Actions runs the same check on pushes and pull requests.
@@ -159,3 +160,6 @@ client-guardian/
 - Fixtures can contain request headers or bodies; never commit secrets, access tokens, or personal data.
 - This demo checks HTTP status and expected response fields. A production-grade tool should also support authentication via CI secrets, OpenAPI schema diffs, request recording, redaction, retry policies, test isolation, and stronger array/schema validation.
 - Explanations are rule-based and labelled AI-style for the demo; no external AI API is called.
+=======
+# client-guardian
+>>>>>>> 29b3ef941d840ecbfbe62bf23ed993919d576aa6
