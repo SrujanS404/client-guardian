@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Client Guardian | Compatibility Dashboard</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="topbar"><div class="brand-mark">CG</div><div><div class="brand">CLIENT GUARDIAN</div><div class="tagline">Legacy API compatibility monitor</div></div><span class="demo-pill">DEMO PROJECT</span></header>
+  <main class="container">
+    <section class="hero"><div><p class="eyebrow">BACKWARD COMPATIBILITY · CI QUALITY GATE</p><h1>Protect your older app versions.</h1><p class="subtitle">Replay saved client requests against your new backend and catch breaking changes before merge.</p></div><button id="refresh">Refresh report ↻</button></section>
+    <section class="metrics"><article class="metric"><span>Total checks</span><strong id="total">—</strong><small>Saved API workflows</small></article><article class="metric"><span>Passed</span><strong class="good" id="passed">—</strong><small>Compatible responses</small></article><article class="metric"><span>Failed</span><strong class="bad" id="failed">—</strong><small>Potential breaking changes</small></article><article class="metric"><span>Last run</span><strong class="date" id="lastRun">Not run</strong><small id="target">Local demo API</small></article></section>
+    <section class="panel"><div class="panel-head"><div><h2>Compatibility checks</h2><p>Each row represents a request saved from an older app version.</p></div><span id="status" class="status neutral">Waiting for report</span></div><div id="results" class="results"><div class="empty">No report yet. Follow the README to start the API and run your first check.</div></div></section>
+    <section class="how"><h2>How it works</h2><div class="steps"><div><b>01</b><h3>Save old requests</h3><p>Store the method, endpoint and expected response as JSON fixtures.</p></div><div><b>02</b><h3>Replay on every PR</h3><p>GitHub Actions runs the same requests against the proposed backend.</p></div><div><b>03</b><h3>Fix before merge</h3><p>A failed required check can block merging until the change is reviewed.</p></div></div></section>
+    <footer>Built for the Legacy Client API Compatibility Guardian hackathon project · Rule-based explanations included; external AI is not connected.</footer>
+  </main>
+  <script src="/app.js"></script>
+</body></html>

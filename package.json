@@ -1,0 +1,16 @@
+{
+  "name": "client-guardian",
+  "version": "1.0.0",
+  "description": "Legacy Client API Compatibility Guardian - CLI, CI check, and dashboard demo",
+  "type": "module",
+  "main": "src/cli.js",
+  "bin": { "client-guardian": "src/cli.js" },
+  "scripts": {
+    "start:api": "node src/demo-api.js",
+    "start:dashboard": "node src/dashboard.js",
+    "test:guardian": "node src/cli.js test",
+    "test": "node --test"
+  },
+  "dependencies": { "express": "^5.1.0" },
+  "engines": { "node": ">=18" }
+}

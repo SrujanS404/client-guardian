@@ -1,0 +1,47 @@
+{
+  "generatedAt": "2026-10-27T15:22:37.763Z",
+  "baseUrl": "http://127.0.0.1:4000",
+  "total": 2,
+  "passed": 0,
+  "failed": 2,
+  "results": [
+    {
+      "fixture": "legacy-v1-products.json",
+      "name": "Legacy mobile app v1 - product list",
+      "clientVersion": "1.0",
+      "method": "GET",
+      "path": "/api/v1/products",
+      "status": null,
+      "passed": false,
+      "durationMs": 76,
+      "issues": [
+        {
+          "path": "request",
+          "expected": "API responds",
+          "actual": "fetch failed",
+          "message": "Could not replay request. Is the backend running at http://127.0.0.1:4000? Details: fetch failed",
+          "explanation": "AI-style explanation: older clients expect request to remain compatible. Check whether the backend changed its name, type, or value. This is a rule-based demo explanation, not a call to an external AI model."
+        }
+      ]
+    },
+    {
+      "fixture": "legacy-v1-profile.json",
+      "name": "Legacy mobile app v1 - profile",
+      "clientVersion": "1.0",
+      "method": "GET",
+      "path": "/api/v1/profile",
+      "status": null,
+      "passed": false,
+      "durationMs": 3,
+      "issues": [
+        {
+          "path": "request",
+          "expected": "API responds",
+          "actual": "fetch failed",
+          "message": "Could not replay request. Is the backend running at http://127.0.0.1:4000? Details: fetch failed",
+          "explanation": "AI-style explanation: older clients expect request to remain compatible. Check whether the backend changed its name, type, or value. This is a rule-based demo explanation, not a call to an external AI model."
+        }
+      ]
+    }
+  ]
+}

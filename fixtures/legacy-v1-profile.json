@@ -1,0 +1,9 @@
+{
+  "name": "Legacy mobile app v1 - profile",
+  "clientVersion": "1.0",
+  "request": { "method": "GET", "path": "/api/v1/profile" },
+  "expected": {
+    "status": 200,
+    "body": { "id": 7, "name": "Asha", "membership": "standard" }
+  }
+}
